@@ -30,7 +30,7 @@ ul {
 
 /* Header */
 .header {
-    background: #0F4C75;
+    background-image: linear-gradient(45deg, black, #315e7c);
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -152,6 +152,11 @@ ul {
     height: 240px;
     margin: 5px;
     cursor: pointer;
+    transition: transform 0,8s;
+}
+
+.main__ingresos__galeria--img:hover {
+    transform: translateY(-15px)
 }
 
 /* Productos */
