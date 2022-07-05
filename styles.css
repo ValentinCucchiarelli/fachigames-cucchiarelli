@@ -1,0 +1,273 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: url(./images/wall.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 10px;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.active {
+    background-color: #3282B8;
+}
+
+/* Header */
+.header {
+    background: #0F4C75;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 95%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.header--title {
+    color: white;
+    display: inline-block;
+    margin: 5px 20px;
+    font-size: 2.8rem;
+    text-shadow: black .5px 2px;
+}
+
+.header__nav__ul {
+    display: inline-flex;
+    justify-content: space-evenly;
+    width: 46vw;
+}
+
+.header__nav__ul__li {
+    width: 100px;
+}
+
+.header__nav__ul__li--a {
+    color: white;
+    width: 100px;
+    border-radius: 10px;
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+    font-size: 1.6rem;
+    text-shadow: black .5px 2px;
+}
+
+.header__nav__ul__li--a:hover {
+    background-color: #3282B8;
+}
+
+
+.header__pres {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+}
+
+.header__pres--wsp {
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+}
+
+.header__pres__text {
+    color: white;
+    text-align: center;
+    margin: 5px 20px 5px 5px;
+    text-shadow: black .5px 2px;
+}
+
+/* Home */
+.main {
+    background: #0F4C75;
+    width: 75%;
+    margin: 50px auto 30px auto;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    opacity: 90%;
+}
+
+.main__estrenos {
+    background-color: #3282B8;
+    text-align: center;
+    margin: 20px 0 10px 0;
+    box-shadow: -7px -3px 9px -1px rgba(0, 0, 0, 0.75);
+    width: 40vw;
+}
+
+.main__estrenos--title {
+    font-size: 2rem;
+    color: white;
+    font-weight: 300;
+    padding: 8px 0;
+    text-shadow: black .5px 2px;
+}
+
+.main__estrenos--video {
+    width: 100%;
+    display: inline-block;
+}
+
+.main__ingresos {
+    background-color: #3282B8;
+    text-align: center;
+    margin: 20px 0;
+    box-shadow: -7px -3px 9px -1px rgba(0, 0, 0, 0.75);
+}
+
+.main__ingresos--title {
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 300;
+    padding: 8px 0;
+    text-shadow: black .5px 2px;
+}
+
+.main__ingresos__galeria {
+    margin: 0 5px 5px 5px;
+    ;
+}
+
+.main__ingresos__galeria--img {
+    border: solid #0003 1px;
+    width: 180px;
+    height: 240px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+/* Productos */
+.contenedor--productos {
+    display: grid;
+    justify-content: space-around;
+    align-items: center;
+    grid-template-columns: repeat(6, 16%);
+    background-color: #3282B8;
+    width: 100%;
+    margin: auto;
+    opacity: 90%;
+}
+
+.contenedor--productos--main {
+    grid-template-columns: repeat(5, 20%);
+
+}
+
+.contenedor--productos--productos {
+    margin: 40px auto;
+    width: 80%;
+
+}
+
+.contenedor--item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.productos--precio {
+    color: white;
+    padding-top: 20px;
+    text-shadow: black .05px 2px;
+
+}
+
+/* Contacto */
+.main--contacto {
+    background: #0F4C75;
+    width: 45%;
+    margin: 50px auto 30px auto;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    opacity: 90%;
+}
+
+.main--question {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.main--question__text {
+    width: 30%;
+    text-align: right;
+    color: white;
+    padding-right: 5px;
+    font-size: 16px;
+    text-shadow: black .5px 2px;
+
+}
+
+.main--question__input {
+    width: 70%;
+}
+
+.main--button {
+    width: 80px;
+    margin: 0 auto;
+}
+
+.main--quesion__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main--ubicacion__text {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-shadow: black .5px 2px;
+}
+
+/* Footer */
+.footer {
+    background: #0F4C75;
+    width: 100%;
+    text-align: center;
+    opacity: 90%;
+    position: fixed;
+    bottom: 0;
+}
+
+.footer--text {
+    color: white;
+    display: inline-block;
+    margin: 5px 20px;
+    font-size: 1.2rem;
+    font-weight: 100;
+    text-shadow: black .5px 2px;
+}
+
+/* QUERIES */
+@media (max-width: 768px) {
+    .contenedor--productos {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 0;
+    }
+
+    .main__estrenos {
+        width: 80%;
+    }
+}
