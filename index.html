@@ -1,78 +1,113 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="shortcut icon" href="./images/favicon.png" />
+    <title>FachiGames | Home</title>
+  </head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./styles.css">
-	<link rel="shortcut icon" href="./images/favicon.png">
-	<title>FachiGames | Home</title>
-</head>
-
-<body>
-	<header class="header">
-		<h1 class="header--title">FachiGames</h1>
-		<nav class="header__nav">
-			<ul class="header__nav__ul">
-				<li class="header__nav__ul__li"><a href="./index.html" class="header__nav__ul__li--a active">Home</a>
-				</li>
-				<li class="header__nav__ul__li"><a href="./pages/productos.html"
-						class="header__nav__ul__li--a">Productos</a></li>
-				<li class="header__nav__ul__li"><a href="./pages/contacto.html"
-						class="header__nav__ul__li--a">Contacto</a></li>
-			</ul>
-		</nav>
-		<div class="header__pres">
-			<img src="./images/whatsapplogo.png" alt="whatsapplogo" class="header__pres--wsp">
-			<div class="header__pres__text">
-				<label>
-					Whatsapp
-				</label>
-				<p>
-					1234567891
-				</p>
-			</div>
-		</div>
-	</header>
-	<main class="main">
-		<div class="main__estrenos">
-			<h2 class="main__estrenos--title">Estreno de la semana</h2>
-			<iframe class="main__estrenos--video" width="560" height="315"
-				src="https://www.youtube.com/embed/O75Ip4o1bs8" title="YouTube video player" frameborder="0"
-				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-				allowfullscreen>
-			</iframe>
-		</div>
-		<div class="main__ingresos">
-			<h2 class="main__ingresos--title">Nuevos Ingresos</h2>
-			<div class="contenedor--productos contenedor--productos--main">
-				<div class="contenedor--item">
-					<img class="main__ingresos__galeria--img" loading="lazy" src="./images/battlefield1-ps4.jpg"
-						alt="battlefield1-ps4">
-				</div>
-				<div class="contenedor--item">
-					<img class="main__ingresos__galeria--img" loading="lazy" src="./images/eldenring-ps4.jpg"
-						alt="eldenring-ps4">
-				</div>
-				<div class="contenedor--item">
-					<img class="main__ingresos__galeria--img" loading="lazy" src="./images/residentevil2-ps4.jpg"
-						alt="residentevil2-ps4">
-				</div>
-				<div class="contenedor--item">
-					<img class="main__ingresos__galeria--img" loading="lazy" src="./images/mortalkombat11-ps4.jpg"
-						alt="mortalkombat11-ps4">
-				</div>
-				<div class="contenedor--item">
-					<img class="main__ingresos__galeria--img" loading="lazy" src="./images/forhonor-ps4.jpg"
-						alt="forhonor-ps4">
-				</div>
-			</div>
-		</div>
-	</main>
-	<footer class="footer">
-		<h5 class="footer--text">Esta pagina pertenece a Valentin Cucchiarelli</h5>
-	</footer>
-</body>
-
+  <body>
+    <header class="header">
+      <h1 class="header--title">FachiGames</h1>
+      <nav class="header__nav">
+        <ul class="header__nav__ul">
+          <li class="header__nav__ul__li">
+            <a href="./index.html" class="header__nav__ul__li--a active"
+              >Home</a
+            >
+          </li>
+          <li class="header__nav__ul__li">
+            <a href="./pages/productos.html" class="header__nav__ul__li--a"
+              >Productos</a
+            >
+          </li>
+          <li class="header__nav__ul__li">
+            <a href="./pages/contacto.html" class="header__nav__ul__li--a"
+              >Contacto</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="header__pres">
+        <img
+          src="./images/whatsapplogo.png"
+          alt="whatsapplogo"
+          class="header__pres--wsp"
+        />
+        <div class="header__pres__text">
+          <label> Whatsapp </label>
+          <p>1234567891</p>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="main__estrenos">
+        <h2 class="main__estrenos--title">Estreno de la semana</h2>
+        <iframe
+          class="main__estrenos--video"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/O75Ip4o1bs8"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        >
+        </iframe>
+      </div>
+      <div class="main__ingresos">
+        <h2 class="main__ingresos--title">Nuevos Ingresos</h2>
+        <div class="contenedor--productos contenedor--productos--main">
+          <div class="contenedor--item">
+            <img
+              class="main__ingresos__galeria--img"
+              loading="lazy"
+              src="./images/battlefield1-ps4.jpg"
+              alt="battlefield1-ps4"
+            />
+          </div>
+          <div class="contenedor--item">
+            <img
+              class="main__ingresos__galeria--img"
+              loading="lazy"
+              src="./images/eldenring-ps4.jpg"
+              alt="eldenring-ps4"
+            />
+          </div>
+          <div class="contenedor--item">
+            <img
+              class="main__ingresos__galeria--img"
+              loading="lazy"
+              src="./images/residentevil2-ps4.jpg"
+              alt="residentevil2-ps4"
+            />
+          </div>
+          <div class="contenedor--item">
+            <img
+              class="main__ingresos__galeria--img"
+              loading="lazy"
+              src="./images/mortalkombat11-ps4.jpg"
+              alt="mortalkombat11-ps4"
+            />
+          </div>
+          <div class="contenedor--item">
+            <img
+              class="main__ingresos__galeria--img"
+              loading="lazy"
+              src="./images/forhonor-ps4.jpg"
+              alt="forhonor-ps4"
+            />
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <h5 class="footer--text">
+        Esta pagina pertenece a Valentin Cucchiarelli
+      </h5>
+    </footer>
+  </body>
 </html>
