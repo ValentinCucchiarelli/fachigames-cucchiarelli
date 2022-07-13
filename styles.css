@@ -200,54 +200,55 @@ ul {
 }
 
 /* Contacto */
-.main--contacto {
-    background: #0F4C75;
-    width: 45%;
-    margin: 50px auto 30px auto;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    opacity: 90%;
-}
-
-.main--question {
+.form {
+    background-color: white;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 1em;
+    padding: 3.5em 1.5em;
+    margin: auto;
+    margin-top: 8rem;
+  }
+  
+  .form__container {
     width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.main--question__text {
-    width: 30%;
-    text-align: right;
-    color: white;
-    padding-right: 5px;
-    font-size: 16px;
-    text-shadow: black .5px 2px;
-
-}
-
-.main--question__input {
-    width: 70%;
-}
-
-.main--button {
-    width: 80px;
-    margin: 0 auto;
-}
-
-.main--quesion__form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.main--ubicacion__text {
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-shadow: black .5px 2px;
-}
+    display: grid;
+    gap: 1em;
+    grid-auto-columns: 1;
+  }
+  
+  .form__title {
+    text-align: center;
+    font-size: 1.9rem;
+    margin-bottom: 0.4em;
+  }
+  
+  .form__input {
+    font-size: 1rem;
+    padding: 0.8em 1em;
+    outline: none;
+    border: none;
+    border: 1px solid grey;
+    border-radius: 0, 2em;
+  }
+  
+  .form__input--message {
+    resize: none;
+    padding: 1.8em 1em;
+    margin-bottom: 0.5em;
+  }
+  
+  .form__cta {
+    font-size: 1rem;
+    color: #fff;
+    background-color: #3282B8;
+    border: none;
+    font-weight: 300;
+    padding: 0.7em 0;
+    border-radius: 0.2em;
+    cursor: pointer;
+    font-weight: 400;
+  }
 
 /* Footer */
 .footer {
@@ -298,9 +299,14 @@ ul {
     }
     .contenedor--productos {
         grid-template-columns: repeat(2, 1fr);
-    }
-        
+    }     
 }
+
+@media (max-width: 450px) {
+    .form {
+    padding: 3.5em 1em;
+    }
+  }
 
 @media (max-width: 376px) {
     .header{

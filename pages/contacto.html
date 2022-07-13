@@ -36,30 +36,18 @@
 	</header>
 	<main class="main--contacto">
 		<section class="main--contacto__formulario">
-			<form class="main--quesion__form" action="#">
-				<div class="main--question">
-					<label class="main--question__text" for="name">Nombre:</label>
-					<input class="main--question__input" type="text" id="name" placeholder="nombre">
+			<form class="form">
+				<div class="form__container">
+				  <h2 class="form__title">Contactanos</h2>
+				  <input type="text" class="form__input" placeholder="Nombre" />
+				  <input type="email" class="form__input" placeholder="Email" />
+				  <textarea
+					class="form__input form__input--message"
+					placeholder="Mensaje"
+				  ></textarea>
+				  <input type="submit" value="Enviar" class="form__cta" />
 				</div>
-				<div class="main--question">
-					<label class="main--question__text" for="email">Correo:</label>
-					<input class="main--question__input" type="email" id="email" placeholder="correo@gmail.com"
-						name="email">
-				</div>
-				<div class="main--question">
-					<label class="main--question__text" for="comentario">Comentario</label>
-					<textarea class="main--question__input" placeholder="comentario" id="comentario" cols="50"
-						rows="20"></textarea>
-				</div>
-				<input class="main--button" type="button" value="Enviar">
-			</form>
-		</section>
-		<section>
-			<h2 class="main--ubicacion__text">Nuestra Sucursal</h2>
-			<iframe
-				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21235.30470434798!2d-58.08587971173533!3d-34.88917347176331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2de7dcfe08117%3A0x138071d3f8e9721e!2sCity%20Bell%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1654463003672!5m2!1ses!2sar"
-				width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-				referrerpolicy="no-referrer-when-downgrade"></iframe>
+			  </form>
 		</section>
 	</main>
 	<footer class="footer">
