@@ -1,11 +1,3 @@
-*,
-*::after,
-*::before {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
 html {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
@@ -14,6 +6,7 @@ html {
 
 body{
   background-image: linear-gradient(to right, #434343, black);
+  background: cover;
   font-size: 10px;
 }
 
@@ -264,7 +257,7 @@ ul {
 /* QUERIES */
 @media (max-width: 767px) {
   .contenedor--productos {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     padding: 0;
   }
 }
@@ -282,11 +275,11 @@ ul {
     display: none;
   }
   .contenedor--productos--productos {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     margin-top: 100px;
   }
   .contenedor--productos {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
