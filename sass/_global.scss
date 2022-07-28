@@ -1,0 +1,27 @@
+html {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 10px;
+}
+
+body {
+  background-image: $blackGradient;
+  background: cover;
+  font-size: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.active {
+  background-image: $greyGradient;
+}
+
+//Extends
+

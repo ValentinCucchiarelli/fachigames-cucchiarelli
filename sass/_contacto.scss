@@ -1,0 +1,99 @@
+/* Contacto */
+.form {
+  background-color: $whiteColor;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 1em;
+  padding: 3.5em 1.5em;
+  margin: auto;
+  margin-top: 12rem;
+
+  &__container {
+    width: 100%;
+    display: grid;
+    gap: 1em;
+    grid-auto-columns: 1;
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 1.9rem;
+    margin-bottom: 0.4em;
+  }
+
+  &__input {
+    font-size: 1rem;
+    padding: 0.8em 1em;
+    outline: none;
+    border: none;
+    border: 1px solid $greyColor;
+    border-radius: 0, 2em;
+
+    &--message {
+      resize: none;
+      padding: 1.8em 1em;
+      margin-bottom: 0.5em;
+    }
+  }
+
+  &__cta {
+    font-size: 1rem;
+    color: $whiteColor;
+    background-color: $greyColor;
+    border: none;
+    font-weight: 300;
+    padding: 0.7em 0;
+    border-radius: 0.2em;
+    cursor: pointer;
+    font-weight: 400;
+  }
+}
+
+//Borrar Mixin despues!!
+
+@mixin card-base ($alineacion, $fondo) {
+  border-radius: 10px;
+  border: 2px solid $shadowGrey;
+  margin-top: 30px;
+  color: black;
+  display: flex;
+  justify-content: $alineacion;
+  background-color:  $fondo;
+}
+
+.card-1 {
+  @include card-base(space-between, $shadowGrey);
+
+}
+
+.card-2 {
+  @include card-base(space-around, $greyColor);
+
+}
+
+.card-3 {
+  @include card-base(space-evenly, $whiteColor);
+
+}
+
+//Borrar Map!!
+$redesSociales: (
+  github: #1d1d1d,
+  twitter: #55acee,
+  instagram: #c92d8f
+);
+
+.section-map {
+  margin-top: 50px;
+}
+
+//Borrar Bucle Each
+@each $nombre, $color in $redesSociales {
+  .link-#{$nombre} {
+    margin: 0 5px;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    background-color: $color;
+  }
+}

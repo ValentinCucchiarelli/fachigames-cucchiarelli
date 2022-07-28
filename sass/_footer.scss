@@ -1,0 +1,37 @@
+/* Footer */
+.footer {
+  background: $greyColor;
+  width: 100%;
+  text-align: center;
+  opacity: 90%;
+  position: fixed;
+  bottom: 0;
+
+  &--text {
+    color: $whiteColor;
+    display: inline-block;
+    margin: 5px 20px;
+    font-size: 1.2rem;
+    font-weight: 100;
+    text-shadow: $shadowText;
+  }
+}
+
+//Borrar Extend Despues!!
+.btn-base {
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 10px;
+  color: white;
+  text-shadow: $shadowText
+}
+
+.btn-contacto {
+  @extend .btn-base;
+  background-color: $greyColor;
+}
+
+.btn-info {
+  @extend .btn-base;
+  background-color: $shadowGrey;
+}

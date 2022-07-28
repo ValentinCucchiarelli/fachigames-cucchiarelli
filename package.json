@@ -1,0 +1,22 @@
+{
+  "name": "fachigames-cucchiarelli",
+  "version": "1.0.0",
+  "description": "Tienda de Videojuegos",
+  "main": "index.js",
+  "scripts": {
+    "build": "node-sass --include-path sass ./sass/index.scss ./css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ValentinCucchiarelli/fachigames-cucchiarelli.git"
+  },
+  "author": "Valentin Cucchiarelli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ValentinCucchiarelli/fachigames-cucchiarelli/issues"
+  },
+  "homepage": "https://github.com/ValentinCucchiarelli/fachigames-cucchiarelli#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
